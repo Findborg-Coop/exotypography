@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Findborg-Exotypography</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Findborg Exotypography">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <link rel="stylesheet" href="../dist/fonts.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack-extended.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="../et/dist/et.css"> -->
+    <style type="text/css">
+    * {  animation-duration: .2s; }
+    .et-card{width: 330px;}
+    .et-grid-cell(background:blue;border:1px solid #ccc;)
+    </style>
+  </head>
+  <body >
+    <et-layout >
+    <et-header class="mb1" >
+    <div class="et-layout__header-row" >
+      <div class="mdl-layout__drawer-button etHide-md etHide-lg"><i class="material-icons">menu</i></div>
+      <!-- Title -->
+      <span class="et-layout-title"><a href="/et">ET grids</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="et-layout-spacer"></div>
+      <nav class="et-navigation etHide-sm etHide-md">
+        <a class="et-navigation__link" href="docs">Docs</a>
+        <a class="et-navigation__link" href="">Community</a>
+        <a class="et-navigation__link" href="">Templates</a>
+        <a class="et-navigation__link" href="">Community</a>
+        <a class="et-navigation__link" href="">Download</a>
+      </nav>
+    </div>
+    
+    
+    </et-header>
+    <main>
+    
+    
+    <et-grid class="mt1">
+    
+    <div class="et-block et-size-small-100 et-size-md-100 et-size-lg-100">
+      
+      <h3>Standard Flow</h3>
+        <et-grid>
+          <div class="et-block bright-white-text p3 bg-grey-900 zoomIn">A</div>
+          <div class="et-block bright-white-text p3 bg-grey-900 zoomIn">B</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">C</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">D</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">E</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">F</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+          <div class="et-block bright-white-text p3 bg-grey-900">Same Size</div>
+        </et-grid>
+
+      <h3>Grid Sizing</h3>
+      <div class="et-grid">  
+    <div class="et-block bg-light-blue et-size-60 et-size-sm-50 p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-40 et-size-sm-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-25 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-75 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-70 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-30 et-size-sm-100 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-20 et-size-sm-50 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-80 et-size-sm-50 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-90 et-size-sm-100 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="et-block et-size-10 et-size-sm-100 et-size-md-50 bg-light-blue p3">
+        Lorem ipsum dolor sit amet.
+    </div>
+</div>  
+
+      
+
+      <h3>Nested Grids</h3>
+
+      <div class="et-grid">
+        <div class="et-block et-size-50 bg-green">Left Side - no margins or padding
+         <div class="et-grid et-grid-no-spacing">
+            <div class="et-block et-size-50 p3 bg-yellow">Left Side</div>
+            <div class="et-block et-size-50 p3 bg-yellow ">Right Side</div>
+        </div> 
+        </div>
+        <div class="et-block et-size-50 bg-green">Right Side
+        <et-grid>
+            <div class="et-block et-size-50 p3 bg-yellow">Left Side</div>
+            <div class="et-block et-size-50 p3 bg-yellow">Right Side</div>
+        </et-grid>    
+        </div>
+      </div>
+
+
+      <section class="et-grid">
+    <div class="et-block bg-teal et-white-text" style="width:150px;height:150px;">Lorem ipsum</div>
+    <div class="et-block bg-teal" style="width:150px;height:150px;">Lorem ipsum</div>
+    <div class="et-block bg-teal" style="width:150px;height:150px;">Lorem ipsum</div>
+    <div class="et-block bg-teal" style="width:150px;height:150px;">Lorem ipsum</div>
+    <div class="et-block bg-teal" style="width:150px;height:150px;">Lorem ipsum</div>
+</section>
+      <et-grid>
+      
+      <div class="et-grid-cell et-grid-cell-md-6 bg-white grey-border">
+      et-grid-cell et-grid-cell-md-6 
+      </div>
+      <div class="grid-cell et-grid-cell-md-6 bg-white ">
+      
+      grid-cell et-grid-cell-md-6
+      </div>
+      </et-grid>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </et-grid>
+    
+    </main>
+    <et-shelf> <i class="material-icons">dashboard</i><et-spacer></et-spacer> <i class="material-icons">dashboard</i></et-shelf>
+    </et-layout>
+    <script src="../dist/exotypography.js"></script>
+  </body>
+</html>

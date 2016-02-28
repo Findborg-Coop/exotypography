@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Findborg-Exotypography</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Findborg Exotypography">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="../et/dist/et.css"> -->
+
+    <style type="text/css">
+ .full-screen-image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-screen-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.full-screen-image img {
+  z-index: -1;
+}
+.transback{
+  background-image: url("assets/colorback5.jpg");
+}
+    </style>
+    
+  </head>
+
+  <body>
+
+    <et-layout>
+
+    <et-header class="et-layout__header--seamed">
+    <div class="et-layout__header-row" >
+      <div class="mdl-layout__drawer-button "><i class="material-icons">menu</i></div>
+      <!-- Title -->
+      <span class="et-layout-title"><a href="/et">ExoTypography</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="et-layout-spacer"></div>
+      <nav class="et-navigation etHide-sm etHide-md">
+        <a class="et-navigation__link" href="docs">Docs</a>
+        <a class="et-navigation__link" href="">Download</a>
+      </nav>
+    </div>
+    
+    
+    </et-header>
+    <main>
+    
+    <et-grid>
+          <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-brown"><h4>Brown</h4></div>
+              <div class="p2 bg-brown-50">bg-brown-50</div>
+              <div class="p2 bg-brown-100">bg-brown-100</div>
+              <div class="p2 bg-brown-200">bg-brown-200</div>
+              <div class="p2 bg-brown-300">bg-brown-300</div>
+              <div class="p2 bg-brown-400">bg-brown-400</div>
+              <div class="p2 bg-brown">bg-brown </div>
+              <div class="p2 bg-brown-600">bg-brown-600</div>
+              <div class="p2 bg-brown-700">bg-brown-700</div>
+              <div class="p2 bg-brown-800">bg-brown-800</div>
+              <div class="p2 bg-brown-900">bg-brown-900</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bg-brown-50">bg-brown-1</div>
+              <div class="p2 bg-brown-100">bg-brown-2</div>
+              <div class="p2 bg-brown-300">bg-brown-3</div>
+              <div class="p2 bg-brown-600">bg-brown-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 brown-trans-1">brown-trans-1</div>
+                <div class="p2 brown-trans-2">brown-trans-2</div>
+                <div class="p2 brown-trans-3">brown-trans-3</div>
+                <div class="p2 brown-trans-4">brown-trans-4</div>
+                <div class="p2 brown-trans-5">brown-trans-5</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+
+          <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-red white-text"><h4>Red</h4></div>
+              <div class="p2 bg-red-50">bg-red-50</div>
+              <div class="p2 bg-red-100">bg-red-100</div>
+              <div class="p2 bg-red-200">bg-red-200</div>
+              <div class="p2 bg-red-300">bg-red-300</div>
+              <div class="p2 bg-red-400">bg-red-400</div>
+              <div class="p2 bg-red">bg-red</div>
+              <div class="p2 bg-red-600">bg-red-600</div>
+              <div class="p2 bg-red-700">bg-red-700</div>
+              <div class="p2 bg-red-800">bg-red-800</div>
+              <div class="p2 bg-red-900">bg-red-900</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bg-red-50">bg-red-1</div>
+              <div class="p2 bg-red-100">bg-red-2</div>
+              <div class="p2 bg-red-400">bg-red-3</div>
+              <div class="p2 bg-red-700">bg-red-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 red-trans-1">red-trans-1</div>
+                <div class="p2 red-trans-2">red-trans-2</div>
+                <div class="p2 red-trans-3">red-trans-3</div>
+                <div class="p2 red-trans-4">red-trans-4</div>
+                <div class="p2 red-trans-5">red-trans-5</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+
+          <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-green"><h4>Green</h4></div>
+              <div class="p2 bg-green-50">bg-green-50</div>
+              <div class="p2 bg-green-100">bg-green-100</div>
+              <div class="p2 bg-green-200">bg-green-200</div>
+              <div class="p2 bg-green-300">bg-green-300</div>
+              <div class="p2 bg-green-400">bg-green-400</div>
+              <div class="p2 bg-green">bg-green</div>
+              <div class="p2 bg-green-600">bg-green-600</div>
+              <div class="p2 bg-green-700">bg-green-700</div>
+              <div class="p2 bg-green-800">bg-green-800</div>
+              <div class="p2 bg-green-900">bg-green-900</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bg-green-50">bg-light-blue-1</div>
+              <div class="p2 bg-green-200">bg-light-blue-2</div>
+              <div class="p2 bg-green-400">bg-light-blue-3</div>
+              <div class="p2 bg-green-600">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 green-trans-1">bg-light-blue-5</div>
+                <div class="p2 green-trans-2">bg-light-blue-6</div>
+                <div class="p2 green-trans3">bg-light-blue-7</div>
+                <div class="p2 green-trans4">bg-light-blue-8</div>
+                <div class="p2 green-trans5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+
+          <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-yellow"><h4>Yellow</h4></div>
+              <div class="p2 bg-yellow-50">bg-light-blue-50</div>
+              <div class="p2 bg-yellow-100">bg-light-blue-100</div>
+              <div class="p2 bg-yellow-200">bg-light-blue-3</div>
+              <div class="p2 bg-yellow-300">bg-light-blue-4</div>
+              <div class="p2 bg-yellow-400">bg-light-blue-5</div>
+              <div class="p2 bg-yellow">bg-yellow</div>
+              <div class="p2 bg-yellow-600">bg-light-blue-6</div>
+              <div class="p2 bg-yellow-700">bg-light-blue-7</div>
+              <div class="p2 bg-yellow-800">bg-light-blue-8</div>
+              <div class="p2 bg-yellow-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bg-yellow-50">bg-light-blue-1</div>
+              <div class="p2 bg-yellow-300">bg-light-blue-2</div>
+              <div class="p2 bg-yellow-600">bg-light-blue-3</div>
+              <div class="p2 bg-yellow-800">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 yellow-trans-1">bg-light-blue-5</div>
+                <div class="p2 yellow-trans-2">bg-light-blue-6</div>
+                <div class="p2 yellow-trans-3">bg-light-blue-7</div>
+                <div class="p2 yellow-trans-4">bg-light-blue-8</div>
+                <div class="p2 yellow-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+
+          <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-blue"><h4>Blue</h4></div>
+              <div class="p2 bg-blue-50">bg-light-blue-50</div>
+              <div class="p2 bg-blue-100">bg-light-blue-100</div>
+              <div class="p2 bg-blue-200">bg-light-blue-3</div>
+              <div class="p2 bg-blue-300">bg-light-blue-4</div>
+              <div class="p2 bg-blue-400">bg-light-blue-5</div>
+              <div class="p2 bg-blue">bg-blue</div>
+              <div class="p2 bg-blue-600">bg-light-blue-6</div>
+              <div class="p2 bg-blue-700">bg-light-blue-7</div>
+              <div class="p2 bg-blue-800">bg-light-blue-8</div>
+              <div class="p2 bg-blue-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bgBlue1">bg-light-blue-1</div>
+              <div class="p2 bgBlue2">bg-light-blue-2</div>
+              <div class="p2 bgBlue3">bg-light-blue-3</div>
+              <div class="p2 bgBlue4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 blue-trans-1">bg-light-blue-5</div>
+                <div class="p2 blue-trans-2">bg-light-blue-6</div>
+                <div class="p2 blue-trans-3">bg-light-blue-7</div>
+                <div class="p2 blue-trans-4">bg-light-blue-8</div>
+                <div class="p2 blue-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-orange"><h4>Orange</h4></div>
+              <div class=" p2 bg-orange-50">bg-light-blue-50</div>
+              <div class=" p2 bg-orange-100">bg-light-blue-100</div>
+              <div class=" p2 bg-orange-200">bg-light-blue-3</div>
+              <div class=" p2 bg-orange-300">bg-light-blue-4</div>
+              <div class=" p2 bg-orange-400">bg-light-blue-5</div>
+              <div class=" p2 bg-orange">bg-orange</div>
+              <div class=" p2 bg-orange-600">bg-light-blue-6</div>
+              <div class=" p2 bg-orange-700">bg-light-blue-7</div>
+              <div class=" p2 bg-orange-800">bg-light-blue-8</div>
+              <div class=" p2 bg-orange-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bgOrange1">bg-light-blue-1</div>
+              <div class=" p2 bgOrange2">bg-light-blue-2</div>
+              <div class=" p2 bgOrange3">bg-light-blue-3</div>
+              <div class=" p2 bgOrange4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 orange-trans-1">bg-light-blue-5</div>
+                <div class=" p2 orange-trans-2">bg-light-blue-6</div>
+                <div class=" p2 orange-trans-3">bg-light-blue-7</div>
+                <div class=" p2 orange-trans-4">bg-light-blue-8</div>
+                <div class=" p2 orange-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-pink"><h4>Pink</h4></div>
+              <div class=" p2 bg-pink-50">bg-light-blue-50</div>
+              <div class=" p2 bg-pink-100">bg-light-blue-100</div>
+              <div class=" p2 bg-pink-200">bg-light-blue-3</div>
+              <div class=" p2 bg-pink-300">bg-light-blue-4</div>
+              <div class=" p2 bg-pink-400">bg-light-blue-5</div>
+              <div class=" p2 bg-pink">bg-pink</div>
+              <div class=" p2 bg-pink-600">bg-light-blue-6</div>
+              <div class=" p2 bg-pink-700">bg-light-blue-7</div>
+              <div class=" p2 bg-pink-800">bg-light-blue-8</div>
+              <div class=" p2 bg-pink-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bg-pink-50">bg-light-blue-1</div>
+              <div class=" p2 bg-pink-200">bg-light-blue-2</div>
+              <div class=" p2 bg-pink-400">bg-light-blue-3</div>
+              <div class=" p2 bg-pink-600">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 pink-trans-1">bg-light-blue-5</div>
+                <div class=" p2 pink-trans-2">bg-light-blue-6</div>
+                <div class=" p2 pink-trans-3">bg-light-blue-7</div>
+                <div class=" p2 pink-trans-4">bg-light-blue-8</div>
+                <div class=" p2 pink-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-amber"><h4>Amber</h4></div>
+              <div class=" p2 bg-amber-50">bg-light-blue-50</div>
+              <div class=" p2 bg-amber-100">bg-light-blue-100</div>
+              <div class=" p2 bg-amber-200">bg-light-blue-3</div>
+              <div class=" p2 bg-amber-300">bg-light-blue-4</div>
+              <div class=" p2 bg-amber-400">bg-light-blue-5</div>
+              <div class=" p2 bg-amber">bg-amber</div>
+              <div class=" p2 bg-amber-600">bg-light-blue-6</div>
+              <div class=" p2 bg-amber-700">bg-light-blue-7</div>
+              <div class=" p2 bg-amber-800">bg-light-blue-8</div>
+              <div class=" p2 bg-amber-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bg-amber-50">bg-light-blue-1</div>
+              <div class=" p2 bg-amber-200">bg-light-blue-2</div>
+              <div class=" p2 bg-amber-400">bg-light-blue-3</div>
+              <div class=" p2 bg-amber-600">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 amber-trans-1">bg-light-blue-5</div>
+                <div class=" p2 amber-trans-2">bg-light-blue-6</div>
+                <div class=" p2 amber-trans-3">bg-light-blue-7</div>
+                <div class=" p2 amber-trans-4">bg-light-blue-8</div>
+                <div class=" p2 amber-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-cyan"><h4>Cyan</h4></div>
+              <div class=" p2 bg-cyan-50">bg-light-blue-50</div>
+              <div class=" p2 bg-cyan-100">bg-light-blue-100</div>
+              <div class=" p2 bg-cyan-200">bg-light-blue-3</div>
+              <div class=" p2 bg-cyan-300">bg-light-blue-4</div>
+              <div class=" p2 bg-cyan-400">bg-light-blue-5</div>
+              <div class=" p2 bg-cyan">bg-cyan</div>
+              <div class=" p2 bg-cyan-600">bg-light-blue-6</div>
+              <div class=" p2 bg-cyan-700">bg-light-blue-7</div>
+              <div class=" p2 bg-cyan-800">bg-light-blue-8</div>
+              <div class=" p2 bg-cyan-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bgCyan1">bg-light-blue-1</div>
+              <div class=" p2 bgCyan2">bg-light-blue-2</div>
+              <div class=" p2 bgCyan3">bg-light-blue-3</div>
+              <div class=" p2 bgCyan4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 cyan-trans-1">bg-light-blue-5</div>
+                <div class=" p2 cyan-trans-2">bg-light-blue-6</div>
+                <div class=" p2 cyan-trans-3">bg-light-blue-7</div>
+                <div class=" p2 cyan-trans-4">bg-light-blue-8</div>
+                <div class=" p2 cyan-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-light-green"><h4>Light Green</h4></div>
+              <div class=" p2 bg-light-green-50">bg-light-blue-50</div>
+              <div class=" p2 bg-light-green-100">bg-light-blue-100</div>
+              <div class=" p2 bg-light-green-200">bg-light-blue-3</div>
+              <div class=" p2 bg-light-green-300">bg-light-blue-4</div>
+              <div class=" p2 bg-light-green-400">bg-light-blue-5</div>
+              <div class=" p2 bg-light-green">bg-light-green</div>
+              <div class=" p2 bg-light-green-600">bg-light-blue-6</div>
+              <div class=" p2 bg-light-green-700">bg-light-blue-7</div>
+              <div class=" p2 bg-light-green-800">bg-light-blue-8</div>
+              <div class=" p2 bg-light-green-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bg-light-green-50">bg-light-blue-1</div>
+              <div class=" p2 bg-light-green-200">bg-light-blue-2</div>
+              <div class=" p2 bg-light-green-400">bg-light-blue-3</div>
+              <div class=" p2 bg-light-green-600">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 light-green-trans-1">bg-light-blue-5</div>
+                <div class=" p2 light-green-trans-2">bg-light-blue-6</div>
+                <div class=" p2 light-green-trans-3">bg-light-blue-7</div>
+                <div class=" p2 light-green-trans-4">bg-light-blue-8</div>
+                <div class=" p2 light-green-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-purple"><h4>Purple</h4></div>
+              <div class=" p2 bg-purple-50">bg-light-blue-50</div>
+              <div class=" p2 bg-purple-100">bg-light-blue-100</div>
+              <div class=" p2 bg-purple-200">bg-light-blue-3</div>
+              <div class=" p2 bg-purple-300">bg-light-blue-4</div>
+              <div class=" p2 bg-purple-400">bg-light-blue-5</div>
+              <div class=" p2 bg-purple">bg-purple</div>
+              <div class=" p2 bg-purple-600">bg-light-blue-6</div>
+              <div class=" p2 bg-purple-700">bg-light-blue-7</div>
+              <div class=" p2 bg-purple-800">bg-light-blue-8</div>
+              <div class=" p2 bg-purple-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bg-purple1">bg-light-blue-1</div>
+              <div class=" p2 bg-purple2">bg-light-blue-2</div>
+              <div class=" p2 bg-purple3">bg-light-blue-3</div>
+              <div class=" p2 bg-purple4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 purple-trans-1">bg-light-blue-5</div>
+                <div class=" p2 purple-trans-2">bg-light-blue-6</div>
+                <div class=" p2 purple-trans-3">bg-light-blue-7</div>
+                <div class=" p2 purple-trans-4">bg-light-blue-8</div>
+                <div class=" p2 purple-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-lime"><h4>Lime</h4></div>
+              <div class=" p2 bg-lime-50">bg-light-blue-50</div>
+              <div class=" p2 bg-lime-100">bg-light-blue-100</div>
+              <div class=" p2 bg-lime-200">bg-light-blue-3</div>
+              <div class=" p2 bg-lime-300">bg-light-blue-4</div>
+              <div class=" p2 bg-lime-400">bg-light-blue-5</div>
+              <div class=" p2 bg-lime">bg-lime</div>
+              <div class=" p2 bg-lime-600">bg-light-blue-6</div>
+              <div class=" p2 bg-lime-700">bg-light-blue-7</div>
+              <div class=" p2 bg-lime-800">bg-light-blue-8</div>
+              <div class=" p2 bg-lime-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bgLime1">bg-light-blue-1</div>
+              <div class=" p2 bgLime2">bg-light-blue-2</div>
+              <div class=" p2 bgLime3">bg-light-blue-3</div>
+              <div class=" p2 bgLime4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 lime-trans-1">bg-light-blue-5</div>
+                <div class=" p2 lime-trans-2">bg-light-blue-6</div>
+                <div class=" p2 lime-trans-3">bg-light-blue-7</div>
+                <div class=" p2 lime-trans-4">bg-light-blue-8</div>
+                <div class=" p2 lime-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-light-blue"><h4>Light Blue</h4></div>
+              <div class=" p2 bg-light-blue-50">bg-light-blue-50</div>
+              <div class=" p2 bg-light-blue-100">bg-light-blue-100</div>
+              <div class=" p2 bg-light-blue-200">bg-light-blue-3</div>
+              <div class=" p2 bg-light-blue-300">bg-light-blue-4</div>
+              <div class=" p2 bg-light-blue-400">bg-light-blue-5</div>
+              <div class=" p2 bg-light-blue">bg-light-blue</div>
+              <div class=" p2 bg-light-blue-600">bg-light-blue-6</div>
+              <div class=" p2 bg-light-blue-700">bg-light-blue-7</div>
+              <div class=" p2 bg-light-blue-800">bg-light-blue-8</div>
+              <div class=" p2 bg-light-blue-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bgLightBlue1">bg-light-blue-1</div>
+              <div class=" p2 bgLightBlue2">bg-light-blue-2</div>
+              <div class=" p2 bgLightBlue3">bg-light-blue-3</div>
+              <div class=" p2 bgLightBlue4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 light-blue-trans-1">bg-light-blue-5</div>
+                <div class=" p2 light-blue-trans-2">bg-light-blue-6</div>
+                <div class=" p2 light-blue-trans-3">bg-light-blue-7</div>
+                <div class=" p2 light-blue-trans-4">bg-light-blue-8</div>
+                <div class=" p2 light-blue-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+                  <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-teal"><h4>Teal</h4></div>
+              <div class=" p2 bg-teal-50">bg-light-blue-50</div>
+              <div class=" p2 bg-teal-100">bg-light-blue-100</div>
+              <div class=" p2 bg-teal-200">bg-light-blue-3</div>
+              <div class=" p2 bg-teal-300">bg-light-blue-4</div>
+              <div class=" p2 bg-teal-400">bg-light-blue-5</div>
+              <div class=" p2 bg-teal">bg-teal</div>
+              <div class=" p2 bg-teal-600">bg-light-blue-6</div>
+              <div class=" p2 bg-teal-700">bg-light-blue-7</div>
+              <div class=" p2 bg-teal-800">bg-light-blue-8</div>
+              <div class=" p2 bg-teal-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bgTeal1">bg-light-blue-1</div>
+              <div class=" p2 bgTeal2">bg-light-blue-2</div>
+              <div class=" p2 bgTeal3">bg-light-blue-3</div>
+              <div class=" p2 bgTeal4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 teal-trans-1">bg-light-blue-5</div>
+                <div class=" p2 teal-trans-2">bg-light-blue-6</div>
+                <div class=" p2 teal-trans-3">bg-light-blue-7</div>
+                <div class=" p2 teal-trans-4">bg-light-blue-8</div>
+                <div class=" p2 teal-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+                  <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-deep-orange"><h4>Deep Orange</h4></div>
+              <div class=" p2 bg-deep-orange-50">bg-light-blue-50</div>
+              <div class=" p2 bg-deep-orange-100">bg-light-blue-100</div>
+              <div class=" p2 bg-deep-orange-200">bg-light-blue-3</div>
+              <div class=" p2 bg-deep-orange-300">bg-light-blue-4</div>
+              <div class=" p2 bg-deep-orange-400">bg-light-blue-5</div>
+              <div class=" p2 bg-deep-orange">bg-deep-orange</div>
+              <div class=" p2 bg-deep-orange-600">bg-light-blue-6</div>
+              <div class=" p2 bg-deep-orange-700">bg-light-blue-7</div>
+              <div class=" p2 bg-deep-orange-800">bg-light-blue-8</div>
+              <div class=" p2 bg-deep-orange-900">bg-light-blue-9</div>
+              <div class="etTitle">Accents</div>
+              <div class=" p2 bgDeepOrange1">bg-light-blue-1</div>
+              <div class=" p2 bgDeepOrange2">bg-light-blue-2</div>
+              <div class=" p2 bgDeepOrange3">bg-light-blue-3</div>
+              <div class=" p2 bgDeepOrange4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class=" p2 deepOrangeTrans1">bg-light-blue-5</div>
+                <div class=" p2 deepOrangeTrans2">bg-light-blue-6</div>
+                <div class=" p2 deepOrangeTrans3">bg-light-blue-7</div>
+                <div class=" p2 deepOrangeTrans4">bg-light-blue-8</div>
+                <div class=" p2 deepOrangeTrans5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-grey"><h4>Grey</h4></div>
+              <div class="p2 bg-grey-50">bg-light-blue-50</div>
+              <div class="p2 bg-grey-100">bg-light-blue-100</div>
+              <div class="p2 bg-grey-200">bg-light-blue-200</div>
+              <div class="p2 bg-grey-300">bg-light-blue-300</div>
+              <div class="p2 bg-grey-400">bg-light-blue-400</div>
+              <div class="p2 bg-grey">bg-grey </div>
+              <div class="p2 bg-grey-600">bg-light-blue-600</div>
+              <div class="p2 bg-grey-700">bg-light-blue-700</div>
+              <div class="p2 bg-grey-800">bg-light-blue-800</div>
+              <div class="p2 bg-grey-900">bg-light-blue-900</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bgGrey1">bg-light-blue-1</div>
+              <div class="p2 bgGrey2">bg-light-blue-2</div>
+              <div class="p2 bgGrey3">bg-light-blue-3</div>
+              <div class="p2 bgGrey4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 grey-trans-1">bg-light-blue-5</div>
+                <div class="p2 grey-trans-2">bg-light-blue-6</div>
+                <div class="p2 grey-trans-3">bg-light-blue-7</div>
+                <div class="p2 grey-trans-4">bg-light-blue-8</div>
+                <div class="p2 grey-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-blue-grey"><h4>Blue grey</h4></div>
+              <div class="p2 bg-blue-grey-50">bg-light-blue-50</div>
+              <div class="p2 bg-blue-grey-100">bg-light-blue-100</div>
+              <div class="p2 bg-blue-grey-200">bg-light-blue-200</div>
+              <div class="p2 bg-blue-grey-300">bg-light-blue-300</div>
+              <div class="p2 bg-blue-grey-400">bg-light-blue-400</div>
+              <div class="p2 bg-blue-grey">bg-blue-grey </div>
+              <div class="p2 bg-blue-grey-600">bg-light-blue-600</div>
+              <div class="p2 bg-blue-grey-700">bg-light-blue-700</div>
+              <div class="p2 bg-blue-grey-800">bg-light-blue-800</div>
+              <div class="p2 bg-blue-grey-900">bg-light-blue-900</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bgBlueGrey1">bg-light-blue-1</div>
+              <div class="p2 bgBlueGrey2">bg-light-blue-2</div>
+              <div class="p2 bgBlueGrey3">bg-light-blue-3</div>
+              <div class="p2 bgBlueGrey4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 blue-grey-trans-1">bg-light-blue-5</div>
+                <div class="p2 blue-grey-trans-2">bg-light-blue-6</div>
+                <div class="p2 blue-grey-trans-3">bg-light-blue-7</div>
+                <div class="p2 blue-grey-trans-4">bg-light-blue-8</div>
+                <div class="p2 blue-grey-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-deep-purple"><h4>Deep purple</h4></div>
+              <div class="p2 bg-deep-purple-50">bg-light-blue-50</div>
+              <div class="p2 bg-deep-purple-100">bg-light-blue-100</div>
+              <div class="p2 bg-deep-purple-200">bg-light-blue-200</div>
+              <div class="p2 bg-deep-purple-300">bg-light-blue-300</div>
+              <div class="p2 bg-deep-purple-400">bg-light-blue-400</div>
+              <div class="p2 bg-deep-purple">bg-light-blue </div>
+              <div class="p2 bg-deep-purple-600">bg-light-blue-600</div>
+              <div class="p2 bg-deep-purple-700">bg-light-blue-700</div>
+              <div class="p2 bg-deep-purple-800">bg-light-blue-800</div>
+              <div class="p2 bg-deep-purple-900">bg-light-blue-900</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bgDeeppurple1">bg-light-blue-1</div>
+              <div class="p2 bgDeeppurple2">bg-light-blue-2</div>
+              <div class="p2 bgDeeppurple3">bg-light-blue-3</div>
+              <div class="p2 bgDeeppurple4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 deep-purple-trans-1">bg-light-blue-5</div>
+                <div class="p2 deep-purple-trans-2">bg-light-blue-6</div>
+                <div class="p2 deep-purple-trans-3">bg-light-blue-7</div>
+                <div class="p2 deep-purple-trans-4">bg-light-blue-8</div>
+                <div class="p2 deep-purple-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+         <!--color block  -->
+          <div class="et-block">
+            
+              
+              <div class="p2 bg-indigo"><h4>Indigo</h4></div>
+              <div class="p2 bg-indigo-50">bg-light-blue-50</div>
+              <div class="p2 bg-indigo-100">bg-light-blue-100</div>
+              <div class="p2 bg-indigo-200">bg-light-blue-200</div>
+              <div class="p2 bg-indigo-300">bg-light-blue-300</div>
+              <div class="p2 bg-indigo-400">bg-light-blue-400</div>
+              <div class="p2 bg-indigo">bg-indigo </div>
+              <div class="p2 bg-indigo-600">bg-light-blue-600</div>
+              <div class="p2 bg-indigo-700">bg-light-blue-700</div>
+              <div class="p2 bg-indigo-800">bg-light-blue-800</div>
+              <div class="p2 bg-indigo-900">bg-light-blue-900</div>
+              <div class="etTitle">Accents</div>
+              <div class="p2 bgDeepOrange1">bg-light-blue-1</div>
+              <div class="p2 bgDeepOrange2">bg-light-blue-2</div>
+              <div class="p2 bgDeepOrange3">bg-light-blue-3</div>
+              <div class="p2 bgDeepOrange4">bg-light-blue-4</div>
+              <div class="transback" style="">
+                <div class="etTitle" >Transparency</div>  
+                <div class="p2 indigo-trans-1">bg-light-blue-5</div>
+                <div class="p2 indigo-trans-2">bg-light-blue-6</div>
+                <div class="p2 indigo-trans-3">bg-light-blue-7</div>
+                <div class="p2 indigo-trans-4">bg-light-blue-8</div>
+                <div class="p2 indigo-trans-5">bg-light-blue-9</div>
+              </div>
+          </div>
+          
+         <!-- End Color Block -->
+    </et-grid>
+     
+    
+   
+    <et-grid>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, ex eu sagittis faucibus, ligula ipsum sagittis magna, et imperdiet dolor lectus eu libero. Vestibulum venenatis eget turpis sed faucibus. Maecenas in ullamcorper orci, eu ullamcorper sem <a href="#">this is a test link</a>. Etiam elit ante, luctus non ante sit amet, sodales vulputate odio. Aenean divistique nisl tellus, sit amet fringilla nisl volutpat cursus. Quisque dignissim lectus ac nunc consectetur mattis. Proin vel hendrerit ipsum, et lobortis dolor. Vestibulum convallis, nibh et tincidunt divistique, nisl risus facilisis lectus, ut interdum orci nisl ac nunc. Cras et  aliquam felis. Quisque vel ipsum at elit sodales posuere eget non est. Fusce convallis vestibulum dolor non volutpat. Vivamus vestibulum quam ut uldivicies pretium.</p>
+                
+                
+                </et-grid>
+   
+    </main>
+    <et-shelf> <i class="material-icons">dashboard</i><et-spacer></et-spacer>This is a shelf <et-spacer></et-spacer><i class="material-icons">dashboard</i>
+    </et-shelf>
+    <et-mdfooter>
+    <div class="et-mini-footer__left-section">
+      <div class="et-logo">Medium Footer</div>
+      <ul class="et-mini-footer__link-list">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Privacy & Terms</a></li>
+      </ul>
+    </div>
+    <div class="et-mini-footer__right-section">
+      <button class="et-mini-footer__social-btn"></button>
+    <button class="et-mini-footer__social-btn"></button>
+    <button class="et-mini-footer__social-btn"></button></div>
+      </et-mdfooter>
+      
+      </et-layout>
+     
+      
+      
+
+
+
+    <script src="../dist/exotypography.js"></script>
+
+  </body>
+  </html>

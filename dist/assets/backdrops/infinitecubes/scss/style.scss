@@ -1,0 +1,91 @@
+$total: 60;
+$time: 4s;
+
+@function posOrNeg(){ 
+  @return random() * 2 - 1;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: black;
+	overflow: hidden;
+}
+
+.wrap {
+  height: 100%;
+	perspective: 2000px;
+}
+
+.cube {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+	transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+@for $i from 1 through $total {
+	
+	$hue: ($i - 1) * 360/$total;
+	$size: random(20) + 6px;
+	$x: (random(500) + 300) * posOrNeg() * 1px;
+	$y: (random(500) + 300) * posOrNeg() * 1px;
+	$z: $size/2;
+	
+  .cube:nth-child(#{$i})  {
+    height: $size;
+    width: $size;
+    margin-top: -$z;
+    margin-left: -$z;
+    opacity: 0;
+    transform: translate3d($x, $y, (random(3000) + 1000) * -1px) rotateX((random(720) + 180) * posOrNeg() * 1deg) rotateY((random(720) + 180) * posOrNeg() * 1deg);
+    
+		animation: fly#{$i} $time infinite linear;
+    animation-delay: $i * ($time/$total);
+		
+		.side:nth-child(1){
+      transform: rotateX(90deg) translateZ($z);
+    }
+    .side:nth-child(2){
+       transform: translateZ($z);
+    }
+    .side:nth-child(3){
+       transform: rotateY(180deg) translateZ($z);
+    }
+    .side:nth-child(4){
+       transform: rotateY(90deg) translateZ($z);
+    }
+    .side:nth-child(5){
+       transform: rotateY(-90deg) translateZ($z);
+    }
+    .side:nth-child(6){
+       transform: rotateX(-90deg) translateZ($z);
+    }
+
+    @for $i from 1 through 6 {
+      .side:nth-child(#{$i}){
+        background: hsla($hue + ($i * 3), 100%, 50%, .6);
+        border: 1px solid lighten(hsla($hue + ($i * 3), 100%, 50%, .6), 20%);
+      }
+    }  
+  }
+	
+	@keyframes fly#{$i} {
+		100% {
+			transform: translate3d($x, $y, 2000px) rotateX(0) rotateY(0);
+			opacity: 1;
+		}
+	}
+}
